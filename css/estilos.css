@@ -1,52 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;700;900&display=swap');
+
 *{
-    /*reseteo de algunas propiedades*/
-}
-/*clases utilitarias*/
-.colorWhite{
-    color:white;
-}
-.colorGris{
-    color: rgb(79, 83, 87);
-}
-.colorVerde{
-    color: rgb(40, 167, 69);
-}
-.logoNav{
-    background-color: rgb(53,58,64);
-    font-size: 1.5rem;
-}
-/*
-.listaHeader{
-    list-style: none;
-}*/
-/*
-.listaHeader li{
-    list-style: none;
-}*/
-/*
-.listaHeader{
-    display:inline;
-}*/
-header ul li{
-    list-style: none;
-    display:inline;
-}
-.linkNav{
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*display
-
-display: none; *
-display: block; * ocupaban todo el ancho de su contenedor padre, sin importar el contenido que tengan dentro
-display: inline-block; *
-display: inline; * solo ocupaban de ancho lo que tenian de contenido dentro
-display: flex; *
-display: grid;
-display: table;
-display: table-cell;
-display: table-row;
-display: table-column;
-
-
-*/
+body{
+    font-family: 'Open Sans', sans-serif;
+}

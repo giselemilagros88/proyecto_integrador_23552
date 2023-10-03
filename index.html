@@ -7,8 +7,17 @@
         <title>Proyecto integrador Front | Gisele Gonzalez</title>
         <!--favicon-->
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
 
+        <link rel="stylesheet" href="./css/estilos.css">
+        <style>
+            .definicion{
+                object-fit: cover;
+            }
+            .navbar-dark .navbar-nav .nav-link.colorVerde{
+                color:green;
+            }
+        </style>
 
 
 
@@ -21,6 +30,7 @@
     <!--dentro del body van a ir las etiquetas que el usuario va a poder ver en la pagina web-->
     <body>
         <header>
+            <!-- 
             <section class="logoNav">
                 <a href="#">   
                     <img src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0" loading="lazy">
@@ -38,7 +48,40 @@
                        
                     </ul>
                 </nav>
-            </section>
+            </section>-->
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary grisOscuro">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0" width="100px" loading="lazy">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorVerde" href="#">Los oradores</a>
+                      </li>
+                    
+                   
+                    </ul>
+                  
+                  </div>
+                </div>
+              </nav>
           
             <!-- la imagen la pondremos de fondo con css-->
             <section id="conferencia">
@@ -51,38 +94,38 @@
             </section>
         </header>
         
-        <main>
-          <section id="oradores">
+        <main class="container-fluid">
+          <section class="container mb-4" id="oradores">
           
-            <h2>
+            <h2 class="text-center">
                 <div>CONOCE A LOS</div>
                 ORADORES
            </h2>
+           <div class="row">
+                <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
+                    <img src="./assets/img/Steve_Jobs.jpg" alt="Steve Jobs" class="w-100 h-50 definicion" loading="lazy">
+                    <h4>JavaScript</h4>
+                    <h4>React Native</h4>
+                    <h3>Steve Jobs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus incidunt nam, perferendis blanditiis atque voluptates praesentium temporibus provident voluptatibus autem ullam sunt assumenda iste corrupti veritatis accusantium nemo ex.</p>
+                </div>
+               <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
+                    <img src="./assets/img/bill.jpg" alt="Bill Gates" class="w-100 h-50 definicion" loading="lazy">
+                    <h4>Sistemas operativos</h4>
+                    <h4>C++</h4>
+                    <h3>Bill Gates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus incidunt nam, perferendis blanditiis atque voluptates praesentium temporibus provident voluptatibus autem ullam sunt assumenda iste corrupti veritatis accusantium nemo ex.</p>
+               </div>
+               <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
+                    <img src="./assets/img/ada.jpeg"alt="Ada Lovelace" class="w-100 h-50 definicion" loading="lazy">
+                    <h4>Algoritmos</h4>
+                    <h4>Cobol</h4>
+                    <h3>Ada Lovelace</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus incidunt nam, perferendis blanditiis atque voluptates praesentium temporibus provident voluptatibus autem ullam sunt assumenda iste corrupti veritatis accusantium nemo ex.</p>
+               </div>
+           </div>
           
-           <div>
-           
-            <img src="./assets/img/Steve_Jobs.jpg" alt="Steve Jobs" width="600" loading="lazy">
-            <h4>JavaScript</h4>
-            <h4>React Native</h4>
-            <h3>Steve Jobs</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus incidunt nam, perferendis blanditiis atque voluptates praesentium temporibus provident voluptatibus autem ullam sunt assumenda iste corrupti veritatis accusantium nemo ex.</p>
-           </div>
-           <div>
-         
-            <img src="./assets/img/bill.jpg" alt="Bill Gates" loading="lazy">
-            <h4>Sistemas operativos</h4>
-            <h4>C++</h4>
-            <h3>Bill Gates</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus incidunt nam, perferendis blanditiis atque voluptates praesentium temporibus provident voluptatibus autem ullam sunt assumenda iste corrupti veritatis accusantium nemo ex.</p>
-           </div>
-           <div>
-           
-            <img src="./assets/img/ada.jpeg"alt="Ada Lovelace" loading="lazy">
-            <h4>Algoritmos</h4>
-            <h4>Cobol</h4>
-            <h3>Ada Lovelace</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus incidunt nam, perferendis blanditiis atque voluptates praesentium temporibus provident voluptatibus autem ullam sunt assumenda iste corrupti veritatis accusantium nemo ex.</p>
-           </div>
+        
 
 
           </section>
@@ -141,19 +184,11 @@
             </div>
         </aside>
 
-        <section>
-            <h2>Receta</h2>
-            <ul>
-                <li>batir huevos</li>
-                <li>agregar azucar</li>
-            </ul>
-        </section>
-      
        
         <footer>
             footer
         </footer>
-        
+      <script src="./js/bootstrap.bundle.min.js"></script>  
     </body>
 </html>
 
